@@ -1,0 +1,18 @@
+# Local tooling / editor config
+.claude/
+.vscode/
+
+# OS / OneDrive cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Source & reference material (not needed for the live site).
+# Remove these lines if you'd rather back the originals up to GitHub too.
+Design Ideas/
+Product images/
+STP Files/
+
+# Node (not used here, but just in case)
+node_modules/

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0F6FB8">
+<title>SBS Series Single-Ended Shear Beam Load Cell | Transcell</title>
+<meta name="description" content="NTEP / OIML approved single-ended shear beam load cell for floor scales, tank weighing, batching, conveyors and OEM systems. 250–20,000 lb, IP67, ±0.03% nonlinearity. From $185. Manufacturer-direct.">
+
+<!-- ============================================================
+     Transcell SBS Series — single-file static landing page
+     Design system: Swiss/Minimalist · Transcell-blue · IBM Plex
+     All CSS + JS inline. Product images live in /assets (swappable).
+     Real CTA wiring: edit the CONFIG object in the <script> below.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Social / sharing -->
+<meta property="og:type" content="product">
+<meta property="og:title" content="SBS Series Single-Ended Shear Beam Load Cell | Transcell">
+<meta property="og:description" content="NTEP / OIML approved industrial load cell — 250–20,000 lb, IP67, ±0.03%. From $185. Manufacturer-direct.">
+<meta property="og:image" content="assets/sbs-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Transcell SBS Series Shear Beam Load Cell">
+<meta name="twitter:description" content="NTEP-ready industrial load cell. 250–20,000 lb · IP67 · ±0.03%. From $185.">
+<meta name="twitter:image" content="assets/sbs-hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B1B2B'/%3E%3Cpath d='M16 6 L26 25 H6 Z' fill='%230F6FB8'/%3E%3Cpath d='M16 6 L26 25 H16 Z' fill='%230A4D82'/%3E%3Cpath d='M16 15 L21 25 H11 Z' fill='%23fff'/%3E%3C/svg%3E">
+
+<style>
+/* ===================== TOKENS ===================== */
+:root{
+  /* Brand — Transcell corporate blue kept, refreshed */
+  --brand:#0F6FB8;        --brand-600:#0C5E9E;   --brand-700:#0A4D82;
+  --brand-050:#EAF3FB;    --brand-100:#D5E7F6;
+  --royal:#16356E;        /* deep cable royal-navy */
+  --ink:#0B1B2B;          /* headings */
+  --navy:#0B1E30;         --navy-800:#102a40;    --navy-700:#1a3850;
+  --steel:#51637A;        /* secondary text */
+  --steel-400:#7A8BA0;
+  --bg:#F4F7FB;           --surface:#FFFFFF;      --surface-2:#FAFCFE;
+  --muted:#EEF3F8;        --border:#E2E9F1;       --border-strong:#CFDAE6;
+  --ok:#1C8F5A;           --ok-050:#E7F4ED;
+  --gold:#B8860B;
+  /* type scale */
+  --fs-display:clamp(2.5rem,5.4vw,4rem);
+  --fs-h2:clamp(1.85rem,3.4vw,2.75rem);
+  --fs-h3:clamp(1.25rem,1.8vw,1.55rem);
+  /* system */
+  --maxw:1200px;
+  --r-sm:10px; --r:14px; --r-lg:20px; --r-xl:28px;
+  --sp:8px;
+  --nav-h:72px;
+  --shadow-sm:0 1px 2px rgba(11,27,43,.06),0 1px 3px rgba(11,27,43,.05);
+  --shadow:0 4px 14px rgba(11,27,43,.07),0 2px 6px rgba(11,27,43,.05);
+  --shadow-lg:0 24px 50px -12px rgba(11,27,43,.22),0 8px 20px -8px rgba(11,27,43,.12);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --font-display:"Archivo","IBM Plex Sans",system-ui,sans-serif;
+  --shadow-hover:0 22px 46px -18px rgba(11,27,43,.22),0 8px 18px -10px rgba(11,27,43,.14);
+}
+
+/* ===================== RESET ===================== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,p{margin:0}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+
+/* ===================== HELPERS ===================== */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:"IBM Plex Mono",monospace;
+  font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--brand-600)}
+.eyebrow::before{content:"";width:12px;height:12px;flex:none;
+  background:linear-gradient(var(--brand),var(--brand)) center/12px 1.6px no-repeat,
+            linear-gradient(var(--brand),var(--brand)) center/1.6px 12px no-repeat}
+.section{padding:clamp(64px,9vw,112px) 0}
+.section-head{max-width:680px;margin-bottom:48px}
+.section-head h2{font-family:var(--font-display);font-size:var(--fs-h2);font-weight:700;letter-spacing:-.025em;line-height:1.06;margin:16px 0 14px}
+.section-head p{color:var(--steel);font-size:1.075rem}
+.lead{color:var(--steel)}
+svg{flex:none}
+.ic{width:24px;height:24px;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ic-sm{width:18px;height:18px;stroke-width:1.7}
+
+/* ===================== BUTTONS ===================== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:13px 22px;border-radius:var(--r-sm);font-weight:500;font-size:.95rem;letter-spacing:.01em;
+  border:1.5px solid transparent;transition:transform .2s var(--ease),background-color .2s,box-shadow .25s,border-color .18s,background-position .6s var(--ease);
+  min-height:48px;white-space:nowrap}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn-primary{color:#fff;background-color:var(--brand);
+  background-image:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.32) 50%,transparent 62%);
+  background-size:220% 100%;background-position:165% 0;background-repeat:no-repeat;
+  box-shadow:0 6px 16px -4px rgba(15,111,184,.5)}
+.btn-primary:hover{background-color:var(--brand-600);background-position:-35% 0;
+  box-shadow:0 12px 26px -6px rgba(15,111,184,.6);transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--navy-800);transform:translateY(-1px)}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--border-strong)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-600);background:var(--brand-050)}
+.btn-outline-light{background:rgba(255,255,255,.06);color:#fff;border-color:rgba(255,255,255,.32)}
+.btn-outline-light:hover{background:rgba(255,255,255,.14);border-color:#fff}
+.btn-block{width:100%}
+
+/* ===================== NAV ===================== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);
+  background:rgba(244,247,251,.82);backdrop-filter:saturate(160%) blur(14px);
+  border-bottom:1px solid transparent;transition:border-color .25s,background .25s,box-shadow .25s}
+.nav.scrolled{background:rgba(255,255,255,.9);border-bottom-color:var(--border);box-shadow:var(--shadow-sm)}
+.nav-in{height:var(--nav-h);display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:600;letter-spacing:.02em}
+.brand .mark{width:30px;height:30px}
+.brand-logo{height:26px;width:auto;display:block}
+.nav:not(.scrolled) .brand-logo{filter:brightness(0) invert(1)}
+footer .brand-logo{height:28px;filter:brightness(0) invert(1)}
+.brand b{font-family:var(--font-display);font-size:1.06rem;letter-spacing:.16em;font-weight:700}
+.brand .tag{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.18em;color:var(--brand-600);
+  border:1px solid var(--brand-100);background:var(--brand-050);padding:3px 7px;border-radius:6px;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:4px;margin-left:auto}
+.nav-links a{padding:9px 14px;border-radius:8px;font-size:.92rem;color:var(--steel);font-weight:500;
+  transition:color .15s,background .15s}
+.nav-links a:hover{color:var(--ink);background:var(--muted)}
+.nav-links a.active{color:var(--brand-700)}
+.nav-cta{display:flex;align-items:center;gap:10px;margin-left:8px}
+.nav-toggle{display:none;width:46px;height:46px;border:1px solid var(--border-strong);border-radius:10px;
+  background:var(--surface);align-items:center;justify-content:center;color:var(--ink)}
+.spacer{height:var(--nav-h)}
+[id]{scroll-margin-top:calc(var(--nav-h) + 18px)}
+
+/* ===================== HERO ===================== */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;
+  overflow:hidden;background:#0a141d;color:#fff;isolation:isolate}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0;
+  transition:opacity 1.1s var(--ease)}
+.hero-video.ready{opacity:1}
+.hero-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:
+   linear-gradient(0deg,rgba(7,15,23,.92) 0%,rgba(7,15,23,.66) 15%,rgba(7,15,23,.14) 38%,transparent 54%),
+   linear-gradient(80deg,rgba(7,15,23,.5) 0%,rgba(7,15,23,.1) 26%,transparent 48%),
+   linear-gradient(180deg,rgba(7,15,23,.38) 0%,transparent 11%)}
+.hero-grain{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:48px 48px;
+  -webkit-mask-image:radial-gradient(circle at 28% 64%,#000,transparent 72%);mask-image:radial-gradient(circle at 28% 64%,#000,transparent 72%)}
+.hero-content{position:relative;z-index:2;width:100%;padding:120px 0 96px}
+.hero-content .eyebrow{color:#80c2ef}
+.hero-content .eyebrow::before{background:
+   linear-gradient(#80c2ef,#80c2ef) center/12px 1.6px no-repeat,
+   linear-gradient(#80c2ef,#80c2ef) center/1.6px 12px no-repeat}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5.2vw,4.1rem);font-weight:700;
+  letter-spacing:-.032em;line-height:1.0;margin:16px 0 16px;color:#fff;text-shadow:0 2px 36px rgba(0,0,0,.5)}
+.hero h1 .hl{color:#4aa8e4}
+.hero-sub{font-size:clamp(1rem,1.3vw,1.16rem);color:rgba(255,255,255,.85);max-width:34ch;margin-bottom:24px;
+  text-shadow:0 1px 18px rgba(0,0,0,.5)}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.badge{display:inline-flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--border);
+  padding:8px 13px;border-radius:999px;font-size:.82rem;font-weight:500;color:var(--ink);box-shadow:var(--shadow-sm)}
+.badge svg{color:var(--brand);width:16px;height:16px;stroke-width:2}
+.hero .badge{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.2);color:#fff;box-shadow:none;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.hero .badge svg{color:#4aa8e4}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:center}
+.hero-price{font-family:"IBM Plex Mono",monospace;font-size:.82rem;color:rgba(255,255,255,.68);letter-spacing:.02em}
+.hero-price b{color:#fff;font-weight:600;font-size:.98rem}
+.price-flag{display:flex;align-items:baseline;gap:8px;margin-bottom:22px}
+.price-flag .from{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--steel)}
+.price-flag .amt{font-size:1.7rem;font-weight:600;letter-spacing:-.02em}
+.price-flag .unit{color:var(--steel);font-size:.9rem}
+.hero .price-flag .from{color:rgba(255,255,255,.62)}
+.hero .price-flag .amt{color:#fff}
+.hero .price-flag .unit{color:rgba(255,255,255,.62)}
+.hero .hero-actions .btn-ghost{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.hero .hero-actions .btn-ghost:hover{background:rgba(255,255,255,.18);border-color:#fff;color:#fff}
+
+/* nav transparent over the dark video hero */
+.nav:not(.scrolled){background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none}
+.nav:not(.scrolled) .brand b{color:#fff}
+.nav:not(.scrolled) .brand .tag{color:#cfe8fa;border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.08)}
+.nav:not(.scrolled) .nav-links a{color:rgba(255,255,255,.82)}
+.nav:not(.scrolled) .nav-links a:hover{color:#fff}
+.nav:not(.scrolled) .nav-links a::after{background:#fff}
+.nav:not(.scrolled) .nav-cta .btn-ghost{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff}
+.nav:not(.scrolled) .nav-toggle{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff}
+
+/* ===================== CONFIGURATOR ===================== */
+.config-lay{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.config-intro h2{font-family:var(--font-display);font-size:var(--fs-h2);font-weight:700;letter-spacing:-.025em;line-height:1.06;margin:16px 0 14px}
+.config-intro p{color:var(--steel);font-size:1.06rem;margin-bottom:24px;max-width:44ch}
+.config-points{display:grid;gap:13px}
+.config-points li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+.config-points>li>svg{width:20px;height:20px;color:var(--brand);flex:none;margin-top:1px;stroke-width:1.7}
+.config-points b{font-weight:600}
+.config-points span{color:var(--steel)}
+.configurator .stage{max-width:460px;width:100%;margin-left:auto}
+@media (max-width:960px){
+  .config-lay{grid-template-columns:1fr;gap:36px}
+  .configurator .stage{margin:0 auto}
+}
+@media (max-width:680px){
+  .hero{min-height:80vh;min-height:80svh}
+  .hero-content{padding:104px 0 82px}
+}
+
+/* configurator / purchase card */
+.stage{position:relative}
+.config-card{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);
+  box-shadow:var(--shadow-lg);overflow:hidden}
+.config-media{position:relative;background:
+   radial-gradient(120% 120% at 50% 0%,#fff,#eef3f8 70%,#e6edf4);padding:22px 22px 8px;text-align:center}
+.config-media img{margin:0 auto;width:100%;max-width:380px;filter:drop-shadow(0 18px 22px rgba(11,27,43,.16))}
+.media-chip{position:absolute;top:16px;left:16px;display:inline-flex;align-items:center;gap:6px;
+  background:rgba(11,27,43,.86);color:#fff;font-size:.68rem;font-weight:500;letter-spacing:.04em;
+  padding:6px 11px;border-radius:999px;font-family:"IBM Plex Mono",monospace}
+.media-chip.ntep{left:auto;right:16px;background:var(--ok)}
+.config-body{padding:22px 22px 24px}
+.config-row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
+.config-title{font-weight:600;font-size:1.05rem}
+.config-model{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--brand-700);background:var(--brand-050);
+  border:1px solid var(--brand-100);padding:4px 9px;border-radius:7px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--steel);margin-bottom:7px}
+.select-wrap{position:relative}
+.select-wrap svg{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--steel);pointer-events:none;width:18px;height:18px}
+select,.qty input{width:100%;height:50px;border:1.5px solid var(--border-strong);border-radius:var(--r-sm);
+  background:var(--surface-2);padding:0 16px;font-family:inherit;font-size:1rem;color:var(--ink);
+  appearance:none;transition:border-color .15s,box-shadow .15s}
+select:focus,.qty input:focus{border-color:var(--brand);box-shadow:0 0 0 3px rgba(15,111,184,.16);outline:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.qty{display:flex;align-items:stretch;border:1.5px solid var(--border-strong);border-radius:var(--r-sm);overflow:hidden;height:50px;background:var(--surface-2)}
+.qty button{width:46px;border:none;background:transparent;font-size:1.3rem;color:var(--steel);line-height:1}
+.qty button:hover{background:var(--muted);color:var(--brand-600)}
+.qty input{height:auto;border:none;text-align:center;background:transparent;padding:0;font-weight:600;border-radius:0}
+.qty input:focus{box-shadow:none}
+.config-price{display:flex;align-items:baseline;justify-content:space-between;margin:6px 0 16px;
+  padding-top:16px;border-top:1px dashed var(--border-strong)}
+.config-price .lbl{color:var(--steel);font-size:.85rem}
+.config-price .val{font-size:1.5rem;font-weight:600;letter-spacing:-.02em}
+.config-price .val small{font-size:.72rem;color:var(--steel);font-weight:400;letter-spacing:.04em}
+.config-actions{display:grid;gap:10px}
+.config-trust{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:16px;padding-top:15px;border-top:1px solid var(--border)}
+.config-trust span{display:inline-flex;align-items:center;gap:6px;font-size:.76rem;color:var(--steel)}
+.config-trust svg{width:15px;height:15px;color:var(--ok);stroke-width:2.2}
+
+/* ===================== SPEC STRIP ===================== */
+.spec-strip{position:relative;z-index:5;margin-top:-44px}
+.spec-strip .inner{background:var(--ink);color:#fff;border-radius:var(--r-lg);box-shadow:var(--shadow-lg);
+  display:grid;grid-template-columns:repeat(6,1fr);overflow:hidden}
+.spec-cell{padding:24px 22px;border-right:1px solid rgba(255,255,255,.09);position:relative}
+.spec-cell:last-child{border-right:none}
+.spec-cell .k{display:flex;align-items:center;gap:7px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:#95acc0;margin-bottom:10px;font-family:"IBM Plex Mono",monospace}
+.spec-cell .k svg{width:15px;height:15px;color:var(--brand);stroke-width:2}
+.spec-cell .v{font-size:1.35rem;font-weight:600;letter-spacing:-.01em;font-family:"IBM Plex Mono",monospace}
+.spec-cell .v small{display:block;font-size:.72rem;color:#95acc0;font-weight:400;letter-spacing:.02em;margin-top:3px;font-family:"IBM Plex Sans"}
+
+/* ===================== OVERVIEW ===================== */
+.feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.feat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:26px;
+  transition:transform .2s var(--ease),box-shadow .2s,border-color .2s}
+.feat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--border-strong)}
+.feat-ico{width:46px;height:46px;border-radius:11px;background:var(--brand-050);color:var(--brand-600);
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px;border:1px solid var(--brand-100)}
+.feat-card h3{font-size:1.12rem;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
+.feat-card p{color:var(--steel);font-size:.95rem}
+.overview-lay{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.replace-card{background:linear-gradient(160deg,var(--navy),#0b2236);color:#fff;border-radius:var(--r-lg);
+  padding:30px;box-shadow:var(--shadow-lg);position:sticky;top:96px}
+.replace-card .eyebrow{color:#7fb4dd}
+.replace-card .eyebrow::before{background:var(--brand)}
+.replace-card h3{font-size:1.4rem;font-weight:600;margin:14px 0 6px;letter-spacing:-.01em}
+.replace-card p{color:#9fb6cc;font-size:.92rem;margin-bottom:20px}
+.xref{display:grid;gap:9px}
+.xref li{display:flex;align-items:center;gap:11px;padding:11px 14px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);border-radius:10px;font-family:"IBM Plex Mono",monospace;font-size:.84rem}
+.xref li svg{width:16px;height:16px;color:var(--ok);stroke-width:2.4}
+.xref li b{font-weight:500;color:#cfe0ef}
+.xref li span{color:#8aa6bf;margin-left:auto;font-size:.74rem}
+
+/* ===================== APPLICATIONS ===================== */
+.app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.app-card{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);
+  padding:24px;overflow:hidden;transition:transform .2s var(--ease),box-shadow .2s,border-color .2s}
+.app-card::after{content:"";position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle,var(--brand-050),transparent 70%);opacity:0;transition:opacity .25s}
+.app-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--brand-100)}
+.app-card:hover::after{opacity:1}
+.app-ico{width:52px;height:52px;border-radius:13px;background:#fff;border:1px solid var(--border);color:var(--brand-600);
+  display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:var(--shadow-sm)}
+.app-ico svg{width:28px;height:28px;stroke-width:1.5}
+.app-card h3{font-size:1.08rem;font-weight:600;margin-bottom:6px}
+.app-card p{color:var(--steel);font-size:.9rem;position:relative;z-index:1}
+
+/* ===================== MODELS ===================== */
+.models-band{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.table-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
+table.models{width:100%;border-collapse:collapse}
+table.models thead th{background:var(--ink);color:#cfe0ef;text-align:left;font-size:.72rem;letter-spacing:.08em;
+  text-transform:uppercase;font-weight:600;padding:16px 20px;font-family:"IBM Plex Mono",monospace}
+table.models tbody td{padding:16px 20px;border-top:1px solid var(--border);font-size:.94rem;vertical-align:middle}
+table.models tbody tr{transition:background .15s}
+table.models tbody tr:hover{background:var(--brand-050)}
+.cap-val{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:1.05rem}
+.cap-val small{color:var(--steel);font-weight:400;font-size:.7rem;letter-spacing:.04em}
+.model-code{font-family:"IBM Plex Mono",monospace;color:var(--brand-700);font-size:.86rem}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:999px;font-size:.74rem;font-weight:600}
+.pill svg{width:13px;height:13px;stroke-width:2.6}
+.pill-ok{background:var(--ok-050);color:var(--ok)}
+.pill-ind{background:var(--muted);color:var(--steel)}
+.pill-ip{background:var(--brand-050);color:var(--brand-700)}
+td .best{color:var(--steel);font-size:.88rem}
+.row-select{padding:9px 15px;border:1.5px solid var(--border-strong);background:var(--surface);border-radius:9px;
+  font-size:.83rem;font-weight:500;color:var(--ink);display:inline-flex;align-items:center;gap:7px;transition:.15s}
+.row-select:hover{border-color:var(--brand);color:var(--brand-600);background:var(--brand-050)}
+.row-select svg{width:15px;height:15px}
+.models-note{display:flex;gap:10px;align-items:flex-start;margin-top:18px;color:var(--steel);font-size:.86rem}
+.models-note svg{width:18px;height:18px;color:var(--brand);flex:none;margin-top:1px}
+
+/* ===================== ENGINEERING SPECS ===================== */
+.eng-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.eng-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:0;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .2s var(--ease),box-shadow .2s}
+.eng-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.eng-card.wide{grid-column:span 2}
+.eng-head{display:flex;align-items:center;gap:12px;padding:20px 22px;border-bottom:1px solid var(--border);
+  background:var(--surface-2)}
+.eng-head .ei{width:38px;height:38px;border-radius:10px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
+.eng-head .ei svg{width:20px;height:20px;color:var(--brand);stroke-width:1.9}
+.eng-head h3{font-size:1.02rem;font-weight:600}
+.eng-head span{font-family:"IBM Plex Mono",monospace;font-size:.68rem;color:var(--steel-400);letter-spacing:.08em;text-transform:uppercase}
+.eng-rows{padding:8px 22px 18px}
+.eng-rows li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;border-top:1px solid var(--border)}
+.eng-rows li:first-child{border-top:none}
+.eng-rows .lab{color:var(--steel);font-size:.9rem}
+.eng-rows .val{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.9rem;text-align:right;color:var(--ink)}
+.wiring{display:flex;flex-wrap:wrap;gap:8px;padding:4px 22px 20px}
+.wire{display:inline-flex;align-items:center;gap:7px;font-family:"IBM Plex Mono",monospace;font-size:.78rem;
+  border:1px solid var(--border);border-radius:8px;padding:6px 10px;background:var(--surface-2)}
+.wire .dot{width:11px;height:11px;border-radius:50%;border:1px solid rgba(0,0,0,.15)}
+
+/* ===================== ACCESSORIES ===================== */
+.acc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.acc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:22px 18px;
+  text-align:left;transition:transform .2s var(--ease),box-shadow .2s,border-color .2s}
+.acc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--brand-100)}
+.acc-ico{width:44px;height:44px;border-radius:11px;background:var(--brand-050);border:1px solid var(--brand-100);
+  color:var(--brand-600);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.acc-card h3{font-size:.98rem;font-weight:600;margin-bottom:5px}
+.acc-card p{color:var(--steel);font-size:.82rem;margin-bottom:14px}
+.acc-link{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:600;color:var(--brand-600)}
+.acc-link svg{width:15px;height:15px;transition:transform .18s}
+.acc-card:hover .acc-link svg{transform:translateX(3px)}
+.acc-note{display:flex;align-items:center;gap:12px;justify-content:center;margin-top:26px;padding:16px 22px;
+  background:var(--brand-050);border:1px solid var(--brand-100);border-radius:var(--r);color:var(--brand-700);
+  font-size:.92rem;font-weight:500}
+.acc-note svg{width:20px;height:20px;flex:none}
+
+/* ===================== DOWNLOADS ===================== */
+.dl-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.dl-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);
+  padding:20px;transition:transform .2s var(--ease),box-shadow .2s,border-color .2s}
+.dl-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--brand-100)}
+.dl-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.dl-fi{width:42px;height:42px;border-radius:10px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
+.dl-fi svg{width:21px;height:21px;color:#fff;stroke-width:1.7}
+.dl-type{font-family:"IBM Plex Mono",monospace;font-size:.64rem;letter-spacing:.08em;color:var(--steel);
+  border:1px solid var(--border);padding:3px 7px;border-radius:6px}
+.dl-card h3{font-size:.96rem;font-weight:600;margin-bottom:4px}
+.dl-card p{color:var(--steel);font-size:.8rem;margin-bottom:16px;flex:1}
+.dl-btn{display:inline-flex;align-items:center;gap:7px;font-size:.85rem;font-weight:600;color:var(--brand-600);
+  padding:9px 0;border-top:1px solid var(--border)}
+.dl-btn svg{width:16px;height:16px}
+
+/* ===================== TRUST ===================== */
+.trust-sec{background:var(--surface);border-top:1px solid var(--border)}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust-item{display:flex;gap:16px;align-items:flex-start;padding:22px;border:1px solid var(--border);border-radius:var(--r);
+  background:var(--surface-2)}
+.trust-ico{width:46px;height:46px;flex:none;border-radius:11px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
+.trust-ico svg{width:23px;height:23px;color:var(--brand);stroke-width:1.7}
+.trust-item h3{font-size:1.02rem;font-weight:600;margin-bottom:5px}
+.trust-item p{color:var(--steel);font-size:.88rem}
+
+/* ===================== FINAL CTA ===================== */
+.final{position:relative;overflow:hidden;background:linear-gradient(160deg,#0b2236 0%,var(--navy) 55%,#091a2a 100%);color:#fff}
+.final::before{content:"";position:absolute;inset:0;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:48px 48px;
+  -webkit-mask-image:radial-gradient(circle at 50% 40%,#000,transparent 75%);mask-image:radial-gradient(circle at 50% 40%,#000,transparent 75%)}
+.final-in{position:relative;z-index:1;text-align:center;max-width:760px;margin:0 auto}
+.final h2{font-family:var(--font-display);font-size:var(--fs-h2);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin-bottom:16px}
+.final p{color:#a9c1d6;font-size:1.12rem;margin-bottom:34px}
+.final-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.final .glow{position:absolute;width:540px;height:540px;border-radius:50%;left:50%;top:60%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(15,111,184,.4),transparent 60%);z-index:0;filter:blur(20px)}
+
+/* ===================== FOOTER ===================== */
+footer{background:var(--ink);color:#9fb6cc;padding:56px 0 30px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .brand b{color:#fff}
+footer .fdesc{margin-top:16px;font-size:.9rem;max-width:38ch}
+.fcontact{margin-top:18px;display:grid;gap:7px;font-size:.9rem}
+.fcontact a{display:inline-flex;align-items:center;gap:9px}
+.fcontact a:hover{color:#fff}
+.fcontact svg{width:16px;height:16px;color:var(--brand);stroke-width:1.8}
+footer h4{color:#fff;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;font-family:"IBM Plex Mono",monospace}
+.fcol a{display:block;padding:6px 0;font-size:.92rem}
+.fcol a:hover{color:#fff}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;font-size:.82rem;color:#7a93aa}
+
+/* ===================== REVEAL ===================== */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.r-right{transform:translateX(26px)}
+.reveal.r-scale{transform:scale(.965)}
+.reveal.in{opacity:1;transform:none}
+
+/* ===================== CRAFT · MICRO-INTERACTIONS ===================== */
+::selection{background:rgba(15,111,184,.20);color:var(--ink)}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;box-shadow:0 0 0 5px rgba(15,111,184,.18);border-radius:8px}
+
+/* nav — wipe-in underline + scroll progress */
+.nav-links a{position:relative}
+.nav-links a:hover{background:transparent;color:var(--ink)}
+.nav-links a::after{content:"";position:absolute;left:14px;right:14px;bottom:6px;height:2px;border-radius:2px;
+  background:var(--brand);transform:scaleX(0);transform-origin:left;opacity:0;transition:transform .28s var(--ease),opacity .28s}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1);opacity:1}
+.nav-progress{position:absolute;left:0;bottom:-1px;height:2px;width:100%;transform:scaleX(0);transform-origin:left;
+  background:linear-gradient(90deg,var(--brand),#46a6e2);box-shadow:0 0 8px rgba(15,111,184,.5);z-index:1}
+
+/* cards — top-accent wipe + crafted lift + icon nudge */
+.feat-card,.app-card,.acc-card,.dl-card{position:relative}
+.feat-card::before,.app-card::before,.acc-card::before,.dl-card::before{content:"";position:absolute;left:0;right:0;top:0;
+  height:2px;background:linear-gradient(90deg,var(--brand),#46a6e2);transform:scaleX(0);transform-origin:left;
+  transition:transform .32s var(--ease);border-radius:var(--r) var(--r) 0 0}
+.feat-card:hover::before,.app-card:hover::before,.acc-card:hover::before,.dl-card:hover::before{transform:scaleX(1)}
+.feat-card:hover,.app-card:hover,.acc-card:hover,.dl-card:hover,.eng-card:hover{box-shadow:var(--shadow-hover)}
+.feat-ico,.app-ico,.acc-ico{transition:transform .3s var(--ease),background .25s,color .25s}
+.feat-card:hover .feat-ico,.acc-card:hover .acc-ico{transform:translateY(-2px) rotate(-3deg)}
+.app-card:hover .app-ico{transform:translateY(-3px)}
+
+/* spec strip — layered depth + count */
+.spec-strip .inner{background:linear-gradient(180deg,#11304a,var(--ink))}
+.spec-strip .inner::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
+  background:radial-gradient(130% 180% at 16% -30%,rgba(15,111,184,.32),transparent 55%)}
+.spec-strip .inner::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;z-index:2;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent)}
+.spec-cell{z-index:1}
+.count{font-variant-numeric:tabular-nums;display:inline-block}
+
+/* config card — 3D tilt + layered media surface + datum lines */
+.stage{perspective:1300px}
+.config-card[data-tilt]{transition:transform .3s var(--ease),box-shadow .3s var(--ease);transform-style:preserve-3d;will-change:transform}
+.config-media::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);
+  background-size:26px 26px;opacity:.55;
+  -webkit-mask-image:radial-gradient(circle at 50% 38%,#000,transparent 72%);mask-image:radial-gradient(circle at 50% 38%,#000,transparent 72%)}
+.config-media::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -34px 44px -26px rgba(11,27,43,.16);
+  background:radial-gradient(70% 44% at 50% 112%,rgba(11,27,43,.14),transparent 60%)}
+.config-media img{position:relative;z-index:2;transition:transform .3s var(--ease)}
+.media-chip{z-index:3}
+.dim-lines{position:absolute;inset:14px;z-index:2;pointer-events:none;color:var(--brand);opacity:.5}
+.dim-lines text{font-family:"IBM Plex Mono",monospace;font-size:8px;fill:var(--brand);stroke:none;letter-spacing:.05em}
+
+/* product figures (real photos) */
+.eng-headline{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:44px}
+.eng-figure{flex:none;width:228px;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;
+  background:radial-gradient(120% 120% at 50% 0%,#fff,#eef3f8);box-shadow:var(--shadow-sm)}
+.eng-figure img{width:100%;display:block}
+.models-figure{position:relative;border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;margin-bottom:22px;
+  background:radial-gradient(120% 120% at 50% 0%,#fff,#eef3f8);box-shadow:var(--shadow-sm)}
+.models-figure img{width:100%;display:block}
+.models-figure figcaption,.prod-figure figcaption{position:absolute;left:16px;bottom:14px;font-family:"IBM Plex Mono",monospace;
+  font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);background:rgba(255,255,255,.86);
+  border:1px solid var(--border);padding:5px 10px;border-radius:7px;backdrop-filter:blur(4px)}
+.overview-aside{display:grid;gap:24px}
+.prod-figure{position:relative;border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;
+  background:radial-gradient(120% 120% at 50% 0%,#fff,#eef3f8);box-shadow:var(--shadow)}
+.prod-figure img{width:100%;display:block}
+
+/* table row accent */
+table.models tbody tr td:first-child{position:relative}
+table.models tbody tr td:first-child::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--brand);transform:scaleY(0);transform-origin:top;transition:transform .24s var(--ease)}
+table.models tbody tr:hover td:first-child::before{transform:scaleY(1)}
+
+/* image scan-reveal */
+/* Images are visible by default; .shown just adds a subtle settle (never hides) */
+.img-reveal{transition:transform .5s var(--ease),opacity .5s var(--ease)}
+.img-reveal.shown{transform:none}
+
+/* configurator state swaps */
+.swap{animation:swapIn .36s var(--ease)}
+@keyframes swapIn{0%{opacity:0;transform:translateY(-7px)}100%{opacity:1;transform:translateY(0)}}
+.qty input.pop{animation:pop .26s var(--ease)}
+@keyframes pop{0%{transform:scale(1)}42%{transform:scale(1.2)}100%{transform:scale(1)}}
+.qty button:active{transform:scale(.9)}
+
+@media (prefers-reduced-motion:reduce){
+  .img-reveal{clip-path:none;transform:none}
+  .config-card[data-tilt]{transform:none!important}
+  .btn-primary{background-image:none}
+}
+
+/* ===================== TOAST ===================== */
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,20px);z-index:200;
+  background:var(--ink);color:#fff;padding:13px 20px;border-radius:12px;box-shadow:var(--shadow-lg);
+  font-size:.9rem;display:flex;align-items:center;gap:11px;opacity:0;pointer-events:none;transition:.3s var(--ease);max-width:90vw}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast svg{width:18px;height:18px;color:var(--brand);flex:none}
+.toast code{font-family:"IBM Plex Mono",monospace;font-size:.82rem;color:#9fd0f3}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:1080px){
+  .acc-grid,.dl-grid{grid-template-columns:repeat(3,1fr)}
+  .eng-card.wide{grid-column:span 3}
+}
+@media (max-width:960px){
+  .nav-links,.nav-cta .btn-ghost{display:none}
+  .nav-toggle{display:flex}
+  .hero-in{grid-template-columns:1fr;gap:40px}
+  .hero-sub{max-width:48ch}
+  .stage{max-width:440px}
+  .spec-strip .inner{grid-template-columns:repeat(3,1fr)}
+  .spec-cell:nth-child(3){border-right:none}
+  .spec-cell:nth-child(-n+3){border-bottom:1px solid rgba(255,255,255,.09)}
+  .overview-lay{grid-template-columns:1fr;gap:32px}
+  .replace-card{position:static}
+  .app-grid,.eng-grid{grid-template-columns:repeat(2,1fr)}
+  .eng-card.wide{grid-column:span 2}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:680px){
+  .feat-grid,.app-grid,.eng-grid,.acc-grid,.dl-grid,.trust-grid{grid-template-columns:1fr}
+  .eng-card.wide{grid-column:span 1}
+  .spec-strip{margin-top:-20px}
+  .spec-strip .inner{grid-template-columns:repeat(2,1fr)}
+  .spec-cell:nth-child(2){border-right:none}
+  .spec-cell:nth-child(-n+4){border-bottom:1px solid rgba(255,255,255,.09)}
+  .foot-top{grid-template-columns:1fr}
+  /* mobile: turn table into stacked cards */
+  table.models thead{display:none}
+  table.models,table.models tbody,table.models tr,table.models td{display:block;width:100%}
+  table.models tr{border:1px solid var(--border);border-radius:var(--r);margin-bottom:12px;padding:6px 4px;background:var(--surface)}
+  table.models tbody td{border:none;padding:9px 16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  table.models tbody td::before{content:attr(data-l);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--steel);font-family:"IBM Plex Mono",monospace}
+  table.models td .best{text-align:right}
+}
+@media (max-width:560px){
+  /* narrow phones: brand + hamburger only — Quote lives in the menu */
+  .nav-cta .btn-primary{display:none}
+  .brand .tag{display:none}
+  .hero-actions .btn{flex:1 1 100%}
+}
+.nav-mobile{display:none}
+.nav-mobile.open{display:block;position:fixed;top:var(--nav-h);left:0;right:0;z-index:99;background:var(--surface);
+  border-bottom:1px solid var(--border);box-shadow:var(--shadow);padding:14px 24px 22px}
+.nav-mobile a{display:block;padding:13px 12px;border-radius:10px;font-weight:500;color:var(--ink)}
+.nav-mobile a:hover{background:var(--muted)}
+.nav-mobile .btn{margin-top:10px;width:100%}
+</style>
+</head>
+<body>
+
+<a href="#overview" class="btn btn-dark" style="position:absolute;left:-9999px;top:8px;z-index:300"
+   onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#" aria-label="Transcell — SBS Series home">
+      <img class="brand-logo" src="assets/transcell-logo.webp" alt="Transcell" width="403" height="81">
+      <span class="tag">SBS Series</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#specs">Specs</a>
+      <a href="#applications">Applications</a>
+      <a href="#models">Models</a>
+      <a href="#downloads">Downloads</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#downloads" class="btn btn-ghost btn-sm" style="min-height:44px;padding:10px 16px">Download Datasheet</a>
+      <a href="#configure" class="btn btn-primary btn-sm" style="min-height:44px;padding:10px 18px" data-cta="quote">Request Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#overview">Overview</a>
+    <a href="#specs">Specs</a>
+    <a href="#applications">Applications</a>
+    <a href="#models">Models</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#configure" class="btn btn-primary" data-cta="quote">Request Quote</a>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-label="SBS load cell exploded-view animation">
+    <source src="assets/sbs-exploded.mp4" type="video/mp4">
+  </video>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow">Single-Ended Shear Beam · NTEP / OIML</span>
+    <h1>SBS Series <span class="hl">Shear Beam</span><br>Load Cell</h1>
+    <p class="hero-sub">Precision industrial weighing, 250–20,000 lb.</p>
+    <div class="hero-actions">
+      <a href="#configure" class="btn btn-primary">Choose Capacity
+        <svg viewBox="0 0 24 24" class="ic-sm"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#downloads" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" class="ic-sm"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>Download Datasheet</a>
+      <span class="hero-price"><b>From $185</b> / load cell</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPEC STRIP ===================== -->
+<section class="wrap spec-strip" id="specs" aria-label="Key specifications">
+  <div class="inner reveal">
+    <div class="spec-cell"><div class="k"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 19v-7M12 19V8M16 19v-10M20 19V6"/></svg>Capacity</div><div class="v">250–<span class="count" data-to="20" data-suffix="K">20K</span><small>pounds (lb)</small></div></div>
+    <div class="spec-cell"><div class="k"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>Accuracy</div><div class="v"><span class="count" data-to="0.03" data-dec="2" data-prefix="±" data-suffix="%">±0.03%</span><small>nonlinearity</small></div></div>
+    <div class="spec-cell"><div class="k"><svg viewBox="0 0 24 24"><path d="M12 2s7 7.6 7 12a7 7 0 1 1-14 0c0-4.4 7-12 7-12z"/></svg>Protection</div><div class="v">IP67<small>wash-down ready</small></div></div>
+    <div class="spec-cell"><div class="k"><svg viewBox="0 0 24 24"><path d="M12 14a2 2 0 100-4 2 2 0 000 4z"/><path d="M12 4a8 8 0 00-8 8M12 4a8 8 0 018 8"/><path d="M12 12l4-3"/></svg>Safe overload</div><div class="v"><span class="count" data-to="150" data-suffix="%">150%</span><small>of rated cap.</small></div></div>
+    <div class="spec-cell"><div class="k"><svg viewBox="0 0 24 24"><path d="M12 14a2 2 0 100-4 2 2 0 000 4z"/><path d="M4 12a8 8 0 0116 0"/><path d="M12 12l5-2"/></svg>Ultimate overload</div><div class="v"><span class="count" data-to="300" data-suffix="%">300%</span><small>of rated cap.</small></div></div>
+    <div class="spec-cell"><div class="k"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Certified</div><div class="v">NTEP<small>CoC 95-146 · OIML</small></div></div>
+  </div>
+</section>
+
+<!-- ===================== CONFIGURATOR ===================== -->
+<section class="section configurator" id="configure">
+  <div class="wrap">
+    <div class="config-lay">
+      <div class="config-intro reveal">
+        <span class="eyebrow">Configure &amp; Order</span>
+        <h2>Build your SBS load cell</h2>
+        <p>Pick a capacity and quantity, then buy direct or request a volume quote. Every unit ships manufacturer-direct with a 2-year warranty.</p>
+        <ul class="config-points">
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7zM7 19a2 2 0 11-.01 0M18 19a2 2 0 11-.01 0"/></svg>
+            <div><b>Same-day shipping*</b> <span>on stocked capacities ordered by cutoff</span></div></li>
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            <div><b>NTEP &amp; OIML certified</b> <span>legal-for-trade through 10,000 lb</span></div></li>
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M4 18v-6a8 8 0 0116 0v6M4 18a2 2 0 002 2h1v-6H6a2 2 0 00-2 2zM20 18a2 2 0 01-2 2h-1v-6h1a2 2 0 012 2z"/></svg>
+            <div><b>Manufacturer-direct support</b> <span>real engineering help, no middleman</span></div></li>
+        </ul>
+      </div>
+
+      <!-- Configurator / purchase card -->
+      <div class="stage reveal">
+        <div class="config-card" data-tilt>
+          <div class="config-media">
+            <span class="media-chip">Class III · NTEP</span>
+            <span class="media-chip ntep" id="mediaNtep">NTEP ✓</span>
+            <!-- engineering datum motif (POV signature, echoes the datasheet drawing) -->
+            <svg class="dim-lines" viewBox="0 0 360 200" fill="none" stroke="currentColor" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <path d="M30 22 H330" stroke-width="1"/><path d="M30 18 V26 M330 18 V26" stroke-width="1"/>
+              <rect x="168" y="16" width="24" height="12" rx="2" fill="#fff" stroke="none"/>
+              <text x="180" y="25" text-anchor="middle">A</text>
+              <path d="M18 34 V178" stroke-width="1"/>
+              <path d="M14 34 H22 M14 178 H22" stroke-width="1"/>
+              <text x="9" y="109" text-anchor="middle" transform="rotate(-90 9 109)">H</text>
+              <circle cx="30" cy="22" r="2" fill="currentColor" stroke="none"/><circle cx="330" cy="22" r="2" fill="currentColor" stroke="none"/>
+            </svg>
+            <img class="img-reveal" src="assets/sbs-hero.jpg" alt="Transcell SBS single-ended shear beam load cell, front view with NTEP seal and cable" width="600" height="353" loading="lazy" data-parallax>
+          </div>
+          <div class="config-body">
+            <div class="config-row">
+              <div class="config-title">Configure your SBS</div>
+              <div class="config-model" id="modelCode">SBS-5K</div>
+            </div>
+            <div class="field">
+              <label for="capacity">Capacity</label>
+              <div class="select-wrap">
+                <select id="capacity" aria-label="Select capacity">
+                  <option value="250">250 lb</option>
+                  <option value="500">500 lb</option>
+                  <option value="1000">1,000 lb</option>
+                  <option value="2500">2,500 lb</option>
+                  <option value="5000" selected>5,000 lb</option>
+                  <option value="10000">10,000 lb</option>
+                  <option value="20000">20,000 lb</option>
+                </select>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+            </div>
+            <div class="two">
+              <div class="field">
+                <label for="qty">Quantity</label>
+                <div class="qty">
+                  <button type="button" id="qtyMinus" aria-label="Decrease quantity">−</button>
+                  <input id="qty" type="number" inputmode="numeric" value="1" min="1" max="999" aria-label="Quantity">
+                  <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="field">
+                <label for="certView">Certification</label>
+                <div class="select-wrap">
+                  <input id="certView" readonly value="NTEP · OIML" aria-label="Certification"
+                    style="width:100%;height:50px;border:1.5px solid var(--border-strong);border-radius:var(--r-sm);background:var(--muted);padding:0 16px;color:var(--steel);font-family:'IBM Plex Mono',monospace;font-size:.9rem">
+                </div>
+              </div>
+            </div>
+            <div class="config-price">
+              <span class="lbl">Starting price <small id="priceModel">· SBS-5K</small></span>
+              <span class="val mono">$185.00 <small>+ / configuration</small></span>
+            </div>
+            <div class="config-actions">
+              <button class="btn btn-primary btn-block" data-cta="buy">
+                <svg viewBox="0 0 24 24" class="ic-sm"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6L5 3H2"/></svg>
+                Buy Now</button>
+              <button class="btn btn-ghost btn-block" data-cta="quote">Request Quote</button>
+            </div>
+            <div class="config-trust">
+              <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Same-day shipping*</span>
+              <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Free 2-day*</span>
+              <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>2-yr warranty</span>
+              <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>IP67</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OVERVIEW ===================== -->
+<section class="section" id="overview">
+  <div class="wrap">
+    <div class="overview-lay">
+      <div>
+        <div class="section-head reveal" style="margin-bottom:36px">
+          <span class="eyebrow">Why the SBS Series</span>
+          <h2>Engineered for dependable industrial weighing</h2>
+          <p>A proven low-profile shear-beam platform trusted across legal-for-trade and heavy-industrial systems — built to install fast, read true, and last.</p>
+        </div>
+        <div class="feat-grid">
+          <div class="feat-card reveal">
+            <div class="feat-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg></div>
+            <h3>Built for demanding environments</h3>
+            <p>Alloy-steel construction rated up to IP67 — engineered for dust, moisture and wash-down duty on the plant floor.</p>
+          </div>
+          <div class="feat-card reveal">
+            <div class="feat-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h18M3 12l3-3M3 12l3 3M21 9v6"/><rect x="6" y="10" width="12" height="4" rx="1"/></svg></div>
+            <h3>Low-profile shear-beam design</h3>
+            <p>A compact single-ended beam that drops into tight scale builds and platform pockets without sacrificing rated capacity.</p>
+          </div>
+          <div class="feat-card reveal">
+            <div class="feat-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg></div>
+            <h3>New builds, replacement &amp; OEM</h3>
+            <p>A direct-fit equivalent for popular legacy cells, so you can retrofit existing scales or standardize new OEM production.</p>
+          </div>
+          <div class="feat-card reveal">
+            <div class="feat-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M3 6h18M3 6l2 13h14l2-13M8 10v5M12 10v5M16 10v5"/></svg></div>
+            <h3>Legal-for-trade accuracy</h3>
+            <p>±0.03% nonlinearity, hysteresis and repeatability with NTEP &amp; OIML approval for commercial weighing you can certify.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-aside">
+      <!-- real product photo (¾ view) -->
+      <figure class="prod-figure reveal r-scale">
+        <img class="img-reveal" src="assets/sbs-angle.jpg" alt="SBS shear beam load cell, three-quarter view showing cable, label and NTEP seal" width="600" height="353" loading="lazy">
+        <figcaption>SBS-4K · ¾ view</figcaption>
+      </figure>
+      <!-- Drop-in replacement cross-reference -->
+      <aside class="replace-card reveal" aria-label="Cross reference">
+        <span class="eyebrow">Drop-in Replacement</span>
+        <h3>Direct equivalent for</h3>
+        <p>The SBS matches the footprint and output of widely used legacy shear beams — swap without re-engineering the scale.</p>
+        <ul class="xref">
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><b>Vishay Sensortronics 65023</b><span>match</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><b>Revere Transducers 5123</b><span>match</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><b>Rice Lake RL30000</b><span>match</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><b>Tedea-Huntleigh 3411</b><span>match</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><b>Artech 30310</b><span>match</span></li>
+        </ul>
+      </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APPLICATIONS ===================== -->
+<section class="section" id="applications" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Applications</span>
+      <h2>One platform, built into every weighing system</h2>
+      <p>From legal-for-trade floor scales to high-throughput batching, the SBS is the workhorse cell scale builders specify.</p>
+    </div>
+    <div class="app-grid">
+      <div class="app-card reveal">
+        <div class="app-ico"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 14V9h10v5M12 9V5M9 5h6"/></svg></div>
+        <h3>Floor scales</h3><p>Low-profile mounting for 4-cell platform and pallet scales.</p>
+      </div>
+      <div class="app-card reveal">
+        <div class="app-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M6 8a6 3 0 0012 0M6 8v9a6 3 0 0012 0V8M6 8a6 3 0 0112 0"/></svg></div>
+        <h3>Tank &amp; vessel weighing</h3><p>Reliable mounts for silos, tanks and reactor vessels.</p>
+      </div>
+      <div class="app-card reveal">
+        <div class="app-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M4 4h16l-3 9H7zM7 13l-2 4h14l-2-4M10 21h4"/></svg></div>
+        <h3>Hoppers &amp; batching</h3><p>Precise dosing for blending, mixing and batch systems.</p>
+      </div>
+      <div class="app-card reveal">
+        <div class="app-ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="6" cy="15" r="2.5"/><circle cx="18" cy="15" r="2.5"/><path d="M6 12.5h12M6 17.5h12M9 8l3-3 3 3"/></svg></div>
+        <h3>Conveyor &amp; belt scales</h3><p>In-motion weighing for continuous process lines.</p>
+      </div>
+      <div class="app-card reveal">
+        <div class="app-ico"><svg class="ic" viewBox="0 0 24 24"><rect x="4" y="13" width="16" height="4" rx="1"/><path d="M12 13V6M8 6h8M9 20h6"/></svg></div>
+        <h3>Platform scales</h3><p>Bench and floor platforms across capacity classes.</p>
+      </div>
+      <div class="app-card reveal">
+        <div class="app-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l2.5 2.5M12 3L9.5 5.5M12 3v5M5 21h14M7 21v-7h10v7M10 14v-2h4v2"/><circle cx="12" cy="11" r="1"/></svg></div>
+        <h3>OEM weighing systems</h3><p>Standardize production with a stocked, certified cell.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MODELS ===================== -->
+<section class="section" id="models">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Models &amp; Capacity</span>
+      <h2>Choose the right capacity</h2>
+      <p>Seven core capacities across three mechanical classes. Pick a row to load it into the configurator.</p>
+    </div>
+    <figure class="models-figure reveal">
+      <img class="img-reveal" src="assets/sbs-lineup.jpg" alt="The SBS family across capacities — four single-ended shear beam load cells in a row" width="600" height="353" loading="lazy">
+      <figcaption>The SBS family · 250–20,000 lb</figcaption>
+    </figure>
+    <div class="table-card reveal">
+      <table class="models">
+        <thead>
+          <tr>
+            <th scope="col">Capacity</th><th scope="col">Model</th><th scope="col">Material</th>
+            <th scope="col">NTEP</th><th scope="col">Environment</th><th scope="col">Best use</th><th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="modelRows"><!-- generated by JS for consistency with configurator --></tbody>
+      </table>
+    </div>
+    <p class="models-note reveal">
+      <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      NTEP Certificate of Conformance 95-146 covers capacities from 1–10,000 lb (Class III). 15,000–20,000 lb models ship as industrial-grade. Material is alloy steel (nickel-plated); stainless options available on select models.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== ENGINEERING SPECS ===================== -->
+<section class="section" id="engineering" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap">
+    <div class="eng-headline">
+      <div class="section-head reveal" style="margin-bottom:0">
+        <span class="eyebrow">Engineering Specifications</span>
+        <h2>The full technical picture</h2>
+        <p>Every value below is pulled directly from the SBS datasheet — grouped so engineers can verify fit at a glance.</p>
+      </div>
+      <figure class="eng-figure reveal r-scale">
+        <img class="img-reveal" src="assets/sbs-detail.jpg" alt="SBS load cell end view showing mounting holes and cable entry" width="600" height="353" loading="lazy">
+      </figure>
+    </div>
+    <div class="eng-grid">
+      <!-- Performance -->
+      <div class="eng-card reveal">
+        <div class="eng-head"><div class="ei"><svg class="ic" viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-9"/><path d="M3 21h18"/></svg></div><div><h3>Performance</h3><span>Metrology</span></div></div>
+        <ul class="eng-rows">
+          <li><span class="lab">Rated output</span><span class="val">3.0 mV/V ±0.1%</span></li>
+          <li><span class="lab">Nonlinearity</span><span class="val">±0.03% R.O.</span></li>
+          <li><span class="lab">Hysteresis</span><span class="val">±0.03% R.O.</span></li>
+          <li><span class="lab">Repeatability</span><span class="val">±0.03% R.O.</span></li>
+          <li><span class="lab">Creep (30 min)</span><span class="val">±0.03% R.O.</span></li>
+          <li><span class="lab">Zero balance</span><span class="val">±1% R.O.</span></li>
+        </ul>
+      </div>
+      <!-- Electrical -->
+      <div class="eng-card reveal">
+        <div class="eng-head"><div class="ei"><svg class="ic" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><div><h3>Electrical</h3><span>Bridge</span></div></div>
+        <ul class="eng-rows">
+          <li><span class="lab">Input impedance</span><span class="val">387 Ω ±5</span></li>
+          <li><span class="lab">Output impedance</span><span class="val">350 Ω ±3</span></li>
+          <li><span class="lab">Insulation res.</span><span class="val">≥5000 MΩ</span></li>
+          <li><span class="lab">Rated excitation</span><span class="val">10 V DC/AC</span></li>
+          <li><span class="lab">Max excitation</span><span class="val">15 V DC/AC</span></li>
+          <li><span class="lab">Cable</span><span class="val">20 ft (6 m)</span></li>
+        </ul>
+      </div>
+      <!-- Environmental -->
+      <div class="eng-card reveal">
+        <div class="eng-head"><div class="ei"><svg class="ic" viewBox="0 0 24 24"><path d="M12 2s7 7.6 7 12a7 7 0 1 1-14 0c0-4.4 7-12 7-12z"/></svg></div><div><h3>Environmental</h3><span>Sealing &amp; temp</span></div></div>
+        <ul class="eng-rows">
+          <li><span class="lab">Protection</span><span class="val">IP67</span></li>
+          <li><span class="lab">Safe temp range</span><span class="val">−10 to +70 °C</span></li>
+          <li><span class="lab">Compensated temp</span><span class="val">−10 to +50 °C</span></li>
+          <li><span class="lab">Temp effect / output</span><span class="val">≤0.002%/°C</span></li>
+          <li><span class="lab">Temp effect / zero</span><span class="val">≤0.002%/°C</span></li>
+        </ul>
+      </div>
+      <!-- Mechanical (wide) -->
+      <div class="eng-card wide reveal">
+        <div class="eng-head"><div class="ei"><svg class="ic" viewBox="0 0 24 24"><path d="M14 4l6 6-3 3-6-6zM11 7L3 15v6h6l8-8"/></svg></div><div><h3>Mechanical</h3><span>Construction &amp; overload</span></div></div>
+        <ul class="eng-rows" style="display:grid;grid-template-columns:1fr 1fr;gap:0 32px">
+          <li><span class="lab">Element type</span><span class="val">Single-ended shear beam</span></li>
+          <li><span class="lab">Material</span><span class="val">Alloy steel</span></li>
+          <li><span class="lab">Capacity range</span><span class="val">250–20,000 lb</span></li>
+          <li><span class="lab">Safe overload</span><span class="val">150% R.C.</span></li>
+          <li><span class="lab">Ultimate overload</span><span class="val">300% R.C.</span></li>
+          <li><span class="lab">Mounting threads</span><span class="val">½″-20 / ¾″-16 / 1″-14 UNF</span></li>
+        </ul>
+      </div>
+      <!-- Certification -->
+      <div class="eng-card reveal">
+        <div class="eng-head"><div class="ei"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><div><h3>Certification</h3><span>Approvals</span></div></div>
+        <ul class="eng-rows">
+          <li><span class="lab">NTEP CoC</span><span class="val">95-146 (1–10k)</span></li>
+          <li><span class="lab">OIML</span><span class="val">Approved</span></li>
+          <li><span class="lab">Accuracy class</span><span class="val">III</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- wiring -->
+    <div class="eng-card reveal" style="margin-top:18px">
+      <div class="eng-head"><div class="ei"><svg class="ic" viewBox="0 0 24 24"><path d="M4 8h4V4M4 8v8a4 4 0 004 4h8a4 4 0 004-4V8M16 8V4M12 8v4a2 2 0 002 2"/></svg></div><div><h3>Cable color code</h3><span>4-conductor</span></div></div>
+      <div class="wiring">
+        <span class="wire"><span class="dot" style="background:#d12b2b"></span>Red — +Excitation</span>
+        <span class="wire"><span class="dot" style="background:#111"></span>Black — −Excitation</span>
+        <span class="wire"><span class="dot" style="background:#1c8f5a"></span>Green — +Signal</span>
+        <span class="wire"><span class="dot" style="background:#fff;border-color:#bbb"></span>White — −Signal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACCESSORIES ===================== -->
+<section class="section" id="accessories">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Complete Your System</span>
+      <h2>Compatible accessories</h2>
+      <p>Add the components that turn a load cell into a finished, calibrated weighing system.</p>
+    </div>
+    <div class="acc-grid">
+      <div class="acc-card reveal">
+        <div class="acc-ico"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="11" rx="2"/><path d="M7 20h10M9 16v4M15 16v4M7 9h6M7 12h3"/></svg></div>
+        <h3>Digital indicators</h3><p>Weight readouts &amp; controllers.</p>
+        <a class="acc-link" href="#" data-cta="accessory">Add to system <svg viewBox="0 0 24 24" class="ic-sm"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="acc-card reveal">
+        <div class="acc-ico"><svg class="ic" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 4v4M16 4v4M8 20v-4M16 20v-4M4 9h3M4 15h3M17 9h3M17 15h3"/></svg></div>
+        <h3>Junction boxes</h3><p>Summing &amp; trimming boxes.</p>
+        <a class="acc-link" href="#" data-cta="accessory">Add to system <svg viewBox="0 0 24 24" class="ic-sm"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="acc-card reveal">
+        <div class="acc-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v6M9 6h6M5 21v-6h14v6M7 15l-2-3h14l-2 3"/></svg></div>
+        <h3>Mounting assemblies</h3><p>Self-aligning load mounts.</p>
+        <a class="acc-link" href="#" data-cta="accessory">Add to system <svg viewBox="0 0 24 24" class="ic-sm"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="acc-card reveal">
+        <div class="acc-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M4 7h4v4M4 7v6a5 5 0 005 5h6a5 5 0 005-5V7M16 7v4"/></svg></div>
+        <h3>Cable accessories</h3><p>Extensions, glands &amp; conduit.</p>
+        <a class="acc-link" href="#" data-cta="accessory">Add to system <svg viewBox="0 0 24 24" class="ic-sm"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="acc-card reveal">
+        <div class="acc-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M14 4l6 6-3 3-6-6zM11 7L3 15v6h6l8-8"/></svg></div>
+        <h3>Calibration &amp; service</h3><p>NIST-traceable calibration.</p>
+        <a class="acc-link" href="#" data-cta="accessory">Talk to us <svg viewBox="0 0 24 24" class="ic-sm"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="acc-note reveal">
+      <svg class="ic" viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 21l-4.9 2.6.9-5.5-4-3.9 5.5-.8z" stroke-width="1.5"/></svg>
+      Bundle compatible components for a complete weighing system — ask us to spec a full kit.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DOWNLOADS ===================== -->
+<section class="section" id="downloads" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Technical Downloads</span>
+      <h2>Documentation &amp; drawings</h2>
+      <p>Everything your engineering and purchasing teams need to specify, install and certify the SBS.</p>
+    </div>
+    <div class="dl-grid">
+      <!-- Real datasheet linked; others are placeholders -->
+      <a class="dl-card reveal" href="SBS-2 datasheet.pdf" target="_blank" rel="noopener">
+        <div class="dl-top"><div class="dl-fi"><svg class="ic" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4M9 13h6M9 16h4"/></svg></div><span class="dl-type">PDF</span></div>
+        <h3>Product datasheet</h3><p>Full specs, dimensions &amp; capacities.</p>
+        <span class="dl-btn"><svg viewBox="0 0 24 24" class="ic-sm"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>Download PDF</span>
+      </a>
+      <a class="dl-card reveal" href="#" data-doc="wiring">
+        <div class="dl-top"><div class="dl-fi"><svg class="ic" viewBox="0 0 24 24"><path d="M5 7h4V3M5 7v8a4 4 0 004 4h6a4 4 0 004-4V7M15 7V3"/></svg></div><span class="dl-type">PDF</span></div>
+        <h3>Wiring guide</h3><p>Color code &amp; bridge schematic.</p>
+        <span class="dl-btn"><svg viewBox="0 0 24 24" class="ic-sm"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>Download PDF</span>
+      </a>
+      <a class="dl-card reveal" href="#" data-doc="drawing">
+        <div class="dl-top"><div class="dl-fi"><svg class="ic" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 9v11M14 14l3 3M14 17l3-3"/></svg></div><span class="dl-type">DWG/PDF</span></div>
+        <h3>Dimensional drawing</h3><p>A–Q dimensions, all classes.</p>
+        <span class="dl-btn"><svg viewBox="0 0 24 24" class="ic-sm"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg>View File</span>
+      </a>
+      <a class="dl-card reveal" href="#" data-doc="ntep">
+        <div class="dl-top"><div class="dl-fi"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><span class="dl-type">PDF</span></div>
+        <h3>NTEP certificate</h3><p>CoC 95-146 conformance.</p>
+        <span class="dl-btn"><svg viewBox="0 0 24 24" class="ic-sm"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>Download PDF</span>
+      </a>
+      <a class="dl-card reveal" href="#" data-doc="install">
+        <div class="dl-top"><div class="dl-fi"><svg class="ic" viewBox="0 0 24 24"><path d="M14 4l6 6-3 3-6-6zM11 7L3 15v6h6l8-8"/></svg></div><span class="dl-type">PDF</span></div>
+        <h3>Installation guide</h3><p>Mounting &amp; commissioning.</p>
+        <span class="dl-btn"><svg viewBox="0 0 24 24" class="ic-sm"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>Download PDF</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST ===================== -->
+<section class="section trust-sec" id="trust">
+  <div class="wrap">
+    <div class="section-head reveal" style="max-width:760px">
+      <span class="eyebrow">Why buy from Transcell</span>
+      <h2>Manufacturer-direct confidence</h2>
+      <p>Founded engineering support, fast fulfillment and real warranty backing — from a name scale companies have trusted for decades.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item reveal"><div class="trust-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M4 18v-6a8 8 0 0116 0v6M4 18a2 2 0 002 2h1v-6H6a2 2 0 00-2 2zM20 18a2 2 0 01-2 2h-1v-6h1a2 2 0 012 2z"/></svg></div><div><h3>Manufacturer-direct support</h3><p>Talk to the people who build and stock the cell — no middleman.</p></div></div>
+      <div class="trust-item reveal"><div class="trust-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7zM7 19a2 2 0 11-.01-.01M18 19a2 2 0 11-.01-.01"/></svg></div><div><h3>Fast shipping</h3><p>Same-day dispatch on stocked capacities when ordered by cutoff.*</p></div></div>
+      <div class="trust-item reveal"><div class="trust-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><div><h3>2-year warranty</h3><p>Backed against defects in materials and workmanship.</p></div></div>
+      <div class="trust-item reveal"><div class="trust-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 3 2 4 2 7h10c0-3 2-4 2-7a7 7 0 00-7-7zM9 21h6M10 18v3M14 18v3"/></svg></div><div><h3>Technical assistance</h3><p>Application sizing, wiring and calibration help on call.</p></div></div>
+      <div class="trust-item reveal"><div class="trust-ico"><svg class="ic" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l5-3 5 3v13M15 21V11l4-2v12M8 11h2M8 14h2M8 17h2"/></svg></div><div><h3>Built for industrial weighing</h3><p>Designed and rated for real plant-floor duty cycles.</p></div></div>
+      <div class="trust-item reveal"><div class="trust-ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0114 0M9 8h6"/></svg></div><div><h3>Trusted across the industry</h3><p>Specified by scale service, OEM and manufacturing teams.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="section final" id="contact">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap final-in">
+    <span class="eyebrow reveal" style="color:#7fb4dd;justify-content:center">Get started</span>
+    <h2 class="reveal" style="margin-top:14px">Ready to configure your SBS load cell?</h2>
+    <p class="reveal">Choose the right capacity, add compatible accessories, or contact Transcell for help selecting the correct model.</p>
+    <div class="final-actions reveal">
+      <a href="#configure" class="btn btn-primary" data-cta="buy">
+        <svg viewBox="0 0 24 24" class="ic-sm"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6L5 3H2"/></svg>Buy Now</a>
+      <a href="#configure" class="btn btn-outline-light" data-cta="quote">Request Quote</a>
+      <a href="#" class="btn btn-outline-light" data-cta="engineer">
+        <svg viewBox="0 0 24 24" class="ic-sm"><path d="M4 5a2 2 0 012-2h2l2 5-2 1a12 12 0 005 5l1-2 5 2v2a2 2 0 01-2 2A16 16 0 014 5z"/></svg>Talk to an Engineer</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="#" aria-label="Transcell home">
+          <img class="brand-logo" src="assets/transcell-logo.webp" alt="Transcell" width="403" height="81">
+        </a>
+        <p class="fdesc">Manufacturer-direct load cells, indicators and weighing components for industrial and legal-for-trade systems.</p>
+        <div class="fcontact">
+          <a href="tel:+18474199180"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h2l2 5-2 1a12 12 0 005 5l1-2 5 2v2a2 2 0 01-2 2A16 16 0 014 5z"/></svg>(847) 419-9180</a>
+          <a href="https://transcell.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>transcell.com</a>
+          <span style="display:inline-flex;gap:9px;align-items:center"><svg viewBox="0 0 24 24" style="width:16px;height:16px;color:var(--brand);stroke-width:1.8;fill:none;stroke:currentColor"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>975 Deerfield Pkwy, Buffalo Grove, IL 60089</span>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Product</h4>
+        <a href="#overview">Overview</a><a href="#specs">Specifications</a><a href="#models">Models &amp; capacity</a>
+        <a href="#applications">Applications</a><a href="#accessories">Accessories</a>
+      </div>
+      <div class="fcol">
+        <h4>Resources</h4>
+        <a href="SBS-2 datasheet.pdf" target="_blank" rel="noopener">Datasheet (PDF)</a>
+        <a href="#downloads">Drawings</a><a href="#downloads">NTEP certificate</a>
+        <a href="#contact" data-cta="quote">Request a quote</a><a href="tel:+18474199180" data-cta="engineer">Talk to an engineer</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Transcell Technology, Inc. · SBS Series Single-Ended Shear Beam Load Cell.</span>
+      <span>Specifications and features subject to change without notice. *Shipping offers subject to availability &amp; cutoff times.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =====================================================================
+   CONFIG — wire these to real Transcell endpoints, then everything works.
+   Leave a value as "" to keep the friendly placeholder/toast behavior.
+   ===================================================================== */
+const CONFIG = {
+  cartBaseUrl: "/cart/",      // Buy Now → /cart/  (selected model & qty appended as ?sku=&qty=)
+  quoteUrl:    "/contact/",   // Request Quote → /contact/  (selected model & qty appended as ?sku=&qty=)
+  engineerTel: "+18474199180",
+  email:       "sales@transcell.net"
+};
+
+/* ---- Model data (single source of truth, mirrors datasheet) ---- */
+const MODELS = [
+  {cap:250,  label:"250 lb",    model:"SBS-250",  cls:"½″-20 UNF", ntep:true,  best:"Bench & small platform scales"},
+  {cap:500,  label:"500 lb",    model:"SBS-500",  cls:"½″-20 UNF", ntep:true,  best:"Platform & checkweighing"},
+  {cap:1000, label:"1,000 lb",  model:"SBS-1K",   cls:"½″-20 UNF", ntep:true,  best:"Floor scales & hoppers"},
+  {cap:2500, label:"2,500 lb",  model:"SBS-2.5K", cls:"½″-20 UNF", ntep:true,  best:"Floor scales & batching"},
+  {cap:5000, label:"5,000 lb",  model:"SBS-5K",   cls:"½″-20 / ¾″-16", ntep:true,  best:"Floor scales & tanks"},
+  {cap:10000,label:"10,000 lb", model:"SBS-10K",  cls:"¾″-16 UNF", ntep:true,  best:"Tank, vessel & silo weighing"},
+  {cap:20000,label:"20,000 lb", model:"SBS-20K",  cls:"1″-14 UNF", ntep:false, best:"Heavy tank & structural weighing"}
+];
+
+const $ = s => document.querySelector(s);
+const toastEl = $("#toast");
+let toastT;
+function toast(msg, code){
+  toastEl.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg><span>'+msg+(code?' <code>'+code+'</code>':'')+'</span>';
+  toastEl.classList.add("show");
+  clearTimeout(toastT); toastT = setTimeout(()=>toastEl.classList.remove("show"), 4200);
+}
+
+/* ---- Build models table (keeps it in lockstep with configurator) ---- */
+(function buildTable(){
+  const tb = $("#modelRows");
+  tb.innerHTML = MODELS.map(m=>`
+    <tr>
+      <td data-l="Capacity"><span class="cap-val">${m.label.split(' ')[0]} <small>lb</small></span></td>
+      <td data-l="Model"><span class="model-code">${m.model}</span></td>
+      <td data-l="Material">Alloy steel</td>
+      <td data-l="NTEP">${m.ntep
+        ? '<span class="pill pill-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12l5 5L20 7"/></svg>NTEP</span>'
+        : '<span class="pill pill-ind">Industrial</span>'}</td>
+      <td data-l="Environment"><span class="pill pill-ip">IP67</span></td>
+      <td data-l="Best use"><span class="best">${m.best}</span></td>
+      <td data-l=""><button class="row-select" data-cap="${m.cap}">Select
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></td>
+    </tr>`).join("");
+  tb.querySelectorAll(".row-select").forEach(b=>{
+    b.addEventListener("click",()=>{
+      $("#capacity").value = b.dataset.cap;
+      syncConfig();
+      document.getElementById("configure").scrollIntoView({behavior:"smooth",block:"start"});
+      $("#capacity").focus({preventScroll:true});
+    });
+  });
+})();
+
+/* ---- Configurator sync ---- */
+const capSel = $("#capacity"), modelCode = $("#modelCode"), priceModel = $("#priceModel"), mediaNtep = $("#mediaNtep");
+function currentModel(){ return MODELS.find(m=>m.cap == capSel.value) || MODELS[4]; }
+const prefersReduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function flash(el){ if(prefersReduce) return; el.classList.remove("swap"); void el.offsetWidth; el.classList.add("swap"); }
+let configReady = false;
+function syncConfig(){
+  const m = currentModel();
+  modelCode.textContent = m.model;
+  priceModel.textContent = "· " + m.model;
+  if(m.ntep){ mediaNtep.textContent = "NTEP ✓"; mediaNtep.style.background = "var(--ok)"; $("#certView").value="NTEP · OIML"; }
+  else { mediaNtep.textContent = "Industrial"; mediaNtep.style.background = "var(--steel)"; $("#certView").value="OIML · Industrial"; }
+  if(configReady){ flash(modelCode); flash(mediaNtep); flash(priceModel); }
+}
+capSel.addEventListener("change", syncConfig);
+syncConfig(); configReady = true;
+
+/* ---- Quantity stepper ---- */
+const qty = $("#qty");
+function popQty(){ if(prefersReduce) return; qty.classList.remove("pop"); void qty.offsetWidth; qty.classList.add("pop"); }
+$("#qtyMinus").addEventListener("click",()=>{ qty.value = Math.max(1,(parseInt(qty.value)||1)-1); popQty(); });
+$("#qtyPlus").addEventListener("click",()=>{ qty.value = Math.min(999,(parseInt(qty.value)||1)+1); popQty(); });
+qty.addEventListener("change",()=>{ let v=parseInt(qty.value)||1; qty.value=Math.min(999,Math.max(1,v)); });
+
+/* ---- CTA routing ---- */
+function go(url){ window.location.href = url; }
+document.addEventListener("click", e=>{
+  const t = e.target.closest("[data-cta]"); if(!t) return;
+  const kind = t.dataset.cta;
+  const m = currentModel(), q = parseInt(qty.value)||1;
+
+  if(kind === "buy"){
+    e.preventDefault();
+    if(CONFIG.cartBaseUrl) return go(`${CONFIG.cartBaseUrl}?sku=${encodeURIComponent(m.model)}&qty=${q}`);
+    toast("Buy Now is ready — set your cart URL in", "CONFIG.cartBaseUrl");
+  }
+  else if(kind === "quote"){
+    e.preventDefault();
+    if(CONFIG.quoteUrl) return go(`${CONFIG.quoteUrl}?sku=${encodeURIComponent(m.model)}&qty=${q}`);
+    if(CONFIG.email){
+      const sub = encodeURIComponent(`Quote request — ${m.model} (${m.label}) ×${q}`);
+      const body = encodeURIComponent(`Please send a quote for:\n\nModel: ${m.model}\nCapacity: ${m.label}\nQuantity: ${q}\n\nCompany:\nName:\nPhone:\n`);
+      return go(`mailto:${CONFIG.email}?subject=${sub}&body=${body}`);
+    }
+    toast("Request Quote is ready — set your form URL in", "CONFIG.quoteUrl");
+  }
+  else if(kind === "engineer"){
+    e.preventDefault();
+    if(CONFIG.engineerTel) return go(`tel:${CONFIG.engineerTel}`);
+    toast("Add a phone number in", "CONFIG.engineerTel");
+  }
+  else if(kind === "accessory"){
+    e.preventDefault();
+    toast("Accessory catalog link goes here — wire it to your store.");
+  }
+});
+
+/* placeholder downloads (datasheet is real) */
+document.querySelectorAll("[data-doc]").forEach(a=>{
+  a.addEventListener("click", e=>{ e.preventDefault(); toast("Document coming soon — drop the PDF in this folder & link it."); });
+});
+
+/* ---- Nav: scroll shadow + mobile menu ---- */
+const nav = $("#nav");
+const heroEl = document.querySelector(".hero");
+function navState(){ const t = heroEl ? Math.max(40, heroEl.offsetHeight - 90) : 40; nav.classList.toggle("scrolled", scrollY > t); }
+addEventListener("scroll", navState, {passive:true}); navState();
+const navToggle = $("#navToggle"), navMobile = $("#navMobile");
+navToggle.addEventListener("click",()=>{
+  const open = navMobile.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", open);
+});
+navMobile.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
+  navMobile.classList.remove("open"); navToggle.setAttribute("aria-expanded","false");
+}));
+
+/* ---- Scrollspy ---- */
+const navAnchors = [...document.querySelectorAll('.nav-links a')];
+const ids = navAnchors.map(a=>a.getAttribute("href").slice(1));
+const spy = new IntersectionObserver(es=>{
+  es.forEach(en=>{ if(en.isIntersecting){
+    navAnchors.forEach(a=>a.classList.toggle("active", a.getAttribute("href")==="#"+en.target.id));
+  }});
+},{rootMargin:"-45% 0px -50% 0px"});
+ids.forEach(id=>{ const el=document.getElementById(id); if(el) spy.observe(el); });
+
+/* ---- Reveal variants: tag elements for varied entrances (kills uniform fade-up) ---- */
+document.querySelectorAll('.feat-card,.app-card,.eng-card,.acc-card,.dl-card,.trust-item').forEach(c=>c.classList.add('r-scale'));
+document.querySelectorAll('.stage').forEach(c=>c.classList.add('r-scale'));
+
+/* ---- Count-up for spec strip ---- */
+function animateCount(el){
+  const to=parseFloat(el.dataset.to), dec=parseInt(el.dataset.dec||"0"),
+        pre=el.dataset.prefix||"", suf=el.dataset.suffix||"", dur=950, t0=performance.now();
+  (function frame(t){
+    const p=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-p,3), v=to*e;
+    el.textContent=pre+v.toFixed(dec)+suf;
+    if(p<1) requestAnimationFrame(frame); else el.textContent=pre+to.toFixed(dec)+suf;
+  })(t0);
+}
+
+/* ---- Image scan-reveal ---- */
+function showImg(img){ img.classList.add("shown"); }
+
+/* ---- 3D pointer-tilt on the configurator card ---- */
+(function tilt(){
+  const card=document.querySelector('.config-card[data-tilt]'); if(!card) return;
+  const img=card.querySelector('[data-parallax]');
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches || !matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  const MAX=5;
+  card.addEventListener('pointermove',e=>{
+    const r=card.getBoundingClientRect(), px=(e.clientX-r.left)/r.width-0.5, py=(e.clientY-r.top)/r.height-0.5;
+    card.style.transform=`rotateY(${px*MAX*2}deg) rotateX(${-py*MAX*2}deg)`;
+    if(img) img.style.transform=`translate(${px*-14}px,${py*-10}px) scale(1.04)`;
+  });
+  card.addEventListener('pointerleave',()=>{ card.style.transform=''; if(img) img.style.transform=''; });
+})();
+
+/* Counts animate via the (reliable) reveal observer below; images are visible by default. */
+
+/* ---- Nav scroll-progress hairline ---- */
+const navProgress=document.getElementById('navProgress');
+function updateProgress(){
+  const h=document.documentElement, max=h.scrollHeight-h.clientHeight, p=max>0?Math.min(1,h.scrollTop/max):0;
+  if(navProgress) navProgress.style.transform=`scaleX(${p})`;
+}
+addEventListener('scroll',updateProgress,{passive:true}); updateProgress();
+
+/* ---- Reveal on scroll ---- */
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const revs = document.querySelectorAll(".reveal");
+if(reduce){ revs.forEach(r=>r.classList.add("in")); }
+else{
+  const ro = new IntersectionObserver((es,o)=>{
+    es.forEach((en,i)=>{ if(en.isIntersecting){
+      const sibs=[...en.target.parentElement.children].filter(c=>c.classList.contains("reveal"));
+      const idx=sibs.indexOf(en.target);
+      en.target.style.transitionDelay=(Math.max(0,idx)*55)+"ms";
+      en.target.classList.add("in");
+      en.target.querySelectorAll(".img-reveal").forEach(im=>im.classList.add("shown"));
+      en.target.querySelectorAll(".count").forEach(animateCount);
+      o.unobserve(en.target);
+    }});
+  },{rootMargin:"0px 0px -8% 0px",threshold:.08});
+  revs.forEach(r=>ro.observe(r));
+}
+
+/* ---- Hero video: fade in when ready; respect reduced-motion ---- */
+(function heroVideo(){
+  const v = document.querySelector(".hero-video"); if(!v) return;
+  const ready = ()=>v.classList.add("ready");
+  v.addEventListener("loadeddata", ready, {once:true});
+  if(v.readyState >= 2) ready();
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){
+    v.removeAttribute("autoplay"); try{ v.pause(); v.currentTime = 0; }catch(e){}
+  } else {
+    const p = v.play && v.play();
+    if(p && p.catch) p.catch(()=>ready()); // autoplay blocked → still show first frame
+  }
+})();
+
+/* year */
+$("#yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
