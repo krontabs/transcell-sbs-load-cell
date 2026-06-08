@@ -1105,7 +1105,7 @@ table.models tbody tr:hover td:first-child::before{transform:scaleY(1)}
    Leave a value as "" to keep the friendly placeholder/toast behavior.
    ===================================================================== */
 const CONFIG = {
-  cartBaseUrl: "/cart/",      // Buy Now → /cart/  (selected model & qty appended as ?sku=&qty=)
+  cartBaseUrl: "https://transcell.com/shop/sbs-series-single-ended-shear-beam-load-cell-ntep/",  // Buy Now → SBS product page
   quoteUrl:    "/contact/",   // Request Quote → /contact/  (selected model & qty appended as ?sku=&qty=)
   engineerTel: "+18474199180",
   email:       "sales@transcell.net"
@@ -1190,8 +1190,8 @@ document.addEventListener("click", e=>{
 
   if(kind === "buy"){
     e.preventDefault();
-    if(CONFIG.cartBaseUrl) return go(`${CONFIG.cartBaseUrl}?sku=${encodeURIComponent(m.model)}&qty=${q}`);
-    toast("Buy Now is ready — set your cart URL in", "CONFIG.cartBaseUrl");
+    if(CONFIG.cartBaseUrl) return go(CONFIG.cartBaseUrl);
+    toast("Buy Now is ready — set your product URL in", "CONFIG.cartBaseUrl");
   }
   else if(kind === "quote"){
     e.preventDefault();
