@@ -545,6 +545,7 @@ table.models tbody tr:hover td:first-child::before{transform:scaleY(1)}
 @media (max-width:680px){
   .feat-grid,.app-grid,.eng-grid,.acc-grid,.dl-grid,.trust-grid{grid-template-columns:1fr}
   .eng-card.wide{grid-column:span 1}
+  .eng-card.wide .eng-rows{grid-template-columns:1fr!important}
   .spec-strip{margin-top:-20px}
   .spec-strip .inner{grid-template-columns:repeat(2,1fr)}
   .spec-cell:nth-child(2){border-right:none}
@@ -564,6 +565,7 @@ table.models tbody tr:hover td:first-child::before{transform:scaleY(1)}
   .nav-cta .btn-primary{display:none}
   .brand .tag{display:none}
   .hero-actions .btn{flex:1 1 100%}
+  .two{grid-template-columns:1fr}
 }
 .nav-mobile{display:none}
 .nav-mobile.open{display:block;position:fixed;top:var(--nav-h);left:0;right:0;z-index:99;background:var(--surface);
